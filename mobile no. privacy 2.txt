@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp19
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            string n = "9190909090";
+
+
+            Console.WriteLine (n.Substring(0,3)+ repeat("*",n.Length-3));
+            Console.ReadLine();
+
+        }
+        public static string repeat(string ch,int count)
+        {
+            string rp = string.Empty;
+            for(int i=0;i<count;i++)
+            {
+                rp += ch;
+            }
+            return rp;
+        }
+    }
+}
